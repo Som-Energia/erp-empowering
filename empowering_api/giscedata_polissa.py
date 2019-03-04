@@ -9,7 +9,8 @@ class GiscedataPolissa(osv.osv):
     _columns = {
         'etag': fields.char('ETag', size=50),
         'empowering_profile': fields.many2one('empowering.modcontractual.profile', 'Empowering profile'),
-        'empowering_service': fields.many2one('empowering.modcontractual.service', 'Empowering services')
+        'empowering_service': fields.many2one('empowering.modcontractual.service', 'Empowering services'),
+        'empowering_last_update': fields.datetime('Last update date contract in Empowering'),
     }
 
 GiscedataPolissa()
